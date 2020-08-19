@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+}
+main {
+  width:80%;
+  margin:0 auto;
+}
+h2 {
+    background-color:DeepSkyBlue ;
+    color: #FFF;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+}
+h2 a {
+  color:#FFF;
+  text-decoration: none;
+  display:block;
+  width:100%;
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+}

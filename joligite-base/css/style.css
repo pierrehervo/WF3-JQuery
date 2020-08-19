@@ -1,0 +1,162 @@
+body {
+	font-family: Tahoma, sans-serif;
+	font-size: 1em;
+	color: #505050;
+	background: #CCC;
+	margin: 0;
+}
+
+#photo {
+	float:right;
+	font-size: 80%;
+	margin-right:-10px;
+	margin-left:20px;
+	font-style: italic;
+}
+
+.container {
+	margin: auto;
+	width: 750px;
+	color: #505050;
+}
+
+header {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 200px;
+	background: #fff url(../img/fond.jpg) no-repeat;
+	color: inherit;
+	width: 100%;
+	border-bottom: 1px solid #fff;
+}
+
+#logo {
+	position:absolute;
+	width:300px;
+	height:100px;
+	top:40px;
+	left:150px;
+	background:  url(../img/logo.png) no-repeat;
+	text-indent:-5000px;
+}
+
+#menu {
+	width: 750px;
+	height: 42px;
+	margin: 0; 
+	padding: 0;
+	background: #333;
+}
+
+#menu ul { 
+	margin: 0; 
+	padding: 0;
+}
+
+#menu li {
+	margin: 0; 
+	padding: 0;
+	list-style-type: none;
+	display: inline;
+	text-transform: uppercase;
+}
+#menu a:link, #menu a:visited {
+	display: block;
+	width: 150px;
+	height: 16px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	float: left;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	font-size:0.9em;
+}
+#menu a:hover , #menu a.on {
+	background-color: #4fb5d2; 
+	color: #fff;
+}
+
+#cherche {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 229px;
+	padding: 10px;
+	background-color: #7c7757;
+	color: black;
+	border: 1px solid #fff;
+	border-bottom: 0;
+	text-align: center;
+}
+
+#cherche p { margin: 0; padding: 0;}
+#cherche input#mot { width:70px;}
+
+
+#contenu { 
+	padding: 1.5em;
+	background: #fff;
+	color: inherit;
+	background: #e5eff2;
+}
+
+p { padding: 0 1.5em; }
+
+footer {
+	clear: both;
+	text-align: center;
+	border-top: 1px dotted #525252;
+	font-size: 90%;
+	background: #fff;color: inherit;
+	padding: 1em;
+}
+
+footer ul {
+	margin: 0px;
+}
+footer li {
+	display:inline;
+	list-style-type: none;
+	padding: 0 0.5em;
+}
+footer a {
+	color:black;
+	text-decoration:none;
+	font-weight: bold;
+}
+footer a:hover , footer a.on {
+	color:blue;
+}
+
+
+#galerie ul {
+	margin: 0px;
+}
+#galerie li {
+	display:inline;
+	list-style-type: none;
+	margin: 0.5em;
+}
+
+#environ dt {
+	font-weight: bold;
+	font-size: 120%;
+	margin-top:22px;
+	cursor: hand;
+}
+
+#environ dd {
+	font-size: 90%;
+	margin-top:6px;
+}
+
+#environ dd a {
+	margin-left:66px;
+	color: #7c7757;
+}
+
+#contact input[type=text] , #contact textarea {
+	width:320px; 
+}

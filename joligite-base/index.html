@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Joli Gite</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<header id="entete">
+				<h1 id="logo">Joli Gite</h1>
+			</header>
+			<nav id="menu">
+				<ul>
+					<li><a class="on" href="index.html">Présentation</a></li>
+					<li><a href="photos.html">Photos</a></li>
+					<li><a href="alentours.html">Aux alentours</a></li>
+					<li><a href="acces.html">Les accès</a></li>
+					<li><a href="contact.html">Nous contacter</a></li>
+				</ul>
+			</nav>
+			<main id="contenu">
+				<h1><em>Joli Gite</em>, un accueil chaleureux</h1>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+			malesuada mauris et nisi. Sed nunc.Ut faucibus nonummy quam. Mauris auctor
+			augue sed mi. Nunc risus augue, auctor non, venenatis nec, consectetuer
+			eget, nisi.</p>
+				<h2>Donec posuere</h2>
+				<p>Maecenas gravida, sem ac auctor pharetra, nulla metus ultrices lacus, nec
+			viverra turpis turpis non erat. Sed commodo hendrerit dui. Sed laoreet lorem in
+			nunc. Donec posuere tincidunt elit. </p>
+				<p>Duis velit erat, molestie a, vestibulum vel, feugiat id, mi. Ut faucibus
+			nonummy quam. Mauris auctor augue sed mi. Nunc risus augue, auctor non,
+			venenatis nec, consectetuer eget, nisi.</p>
+				<h2>Nunc risus</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec malesuada
+			mauris et nisi. Sed nunc. Ut faucibus nonummy quam. Mauris auctor augue sed mi.
+			Nunc risus augue, auctor non, venenatis nec, consectetuer eget, nisi.</p>
+			</main>
+			<footer>
+				<ul>
+					<li><a class="on" href="index.html">Présentation</a></li>
+					<li><a href="photos.html">Photos</a></li>
+					<li><a href="alentours.html">Aux alentours</a></li>
+					<li><a href="acces.html">Les accès</a></li>
+					<li><a href="contact.html">Nous contacter</a></li>
+				</ul>
+			</footer>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+		<script>
+			function animationlogo(){
+				$('#logo').animate({'left':'450px'}, 3000);
+				$('#logo').animate({'top':'70px'}, 3000);
+				$('#logo').animate({'left':'20px'}, 'slow');
+				$('#logo').animate({'top':'20px'}, 'slow');
+				setTimeout("animationlogo()",1000);
+			}
+			$(function(){
+				/*$("#logo").animate({'left': '450px','top':'70px'},'slow');*/
+				$("header").css('background-image','url(img/fond2.jpg)');
+				setTimeout("animationlogo()",1000);
+			});
+		</script>
+	</body>
+</html>

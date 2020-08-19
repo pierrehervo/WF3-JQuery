@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Joli Gite - Galerie photos</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+</head>
+<body>
+	<div class="container">
+		<header id="entete">
+			<h1 id="logo">Joli Gite</h1>
+		</header>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a class="on" href="photos.html">Photos</a></li>
+				<li><a href="alentours.html">Aux alentours</a></li>
+				<li><a href="acces.html">Les accès</a></li>
+				<li><a href="contact.html">Nous contacter</a></li>
+			</ul>
+		</nav>
+		<div id="contenu">
+			<h1>Toutes les photos</h1>
+			<ul id="galerie">
+				<li><a href="img/photos/0_big.jpg" data-lightbox="galerie" title="photo 0 "><img src="img/photos/0.jpg"  ></a></li>
+				<li><a href="img/photos/1_big.jpg" data-lightbox="galerie" title="photo 1 "><img src="img/photos/1.jpg"  ></a></li>
+				<li><a href="img/photos/2_big.jpg" data-lightbox="galerie" title="photo 2 "><img src="img/photos/2.jpg"  ></a></li>
+				<li><a href="img/photos/3_big.jpg" data-lightbox="galerie" title="photo 3 "><img src="img/photos/3.jpg"  ></a></li>
+				<li><a href="img/photos/4_big.jpg" data-lightbox="galerie" title="photo 4 "><img src="img/photos/4.jpg"  ></a></li>
+				<li><a href="img/photos/5_big.jpg" data-lightbox="galerie" title="photo 5 "><img src="img/photos/5.jpg"  ></a></li>
+				<li><a href="img/photos/6_big.jpg" data-lightbox="galerie" title="photo 6 "><img src="img/photos/6.jpg"  ></a></li>
+				<li><a href="img/photos/7_big.jpg" data-lightbox="galerie" title="photo 7 "><img src="img/photos/7.jpg"  ></a></li>
+				<li><a href="img/photos/8_big.jpg" data-lightbox="galerie" title="photo 8 "><img src="img/photos/8.jpg"  ></a></li>
+				<li><a href="img/photos/9_big.jpg" data-lightbox="galerie" title="photo 9 "><img src="img/photos/9.jpg"  ></a></li>
+				<li><a href="img/photos/10_big.jpg" data-lightbox="galerie" title="photo 10"><img src="img/photos/10.jpg" ></a></li>
+				<li><a href="img/photos/11_big.jpg" data-lightbox="galerie" title="photo 11"><img src="img/photos/11.jpg" ></a></li>
+				<li><a href="img/photos/12_big.jpg" data-lightbox="galerie" title="photo 12"><img src="img/photos/12.jpg" ></a></li>
+				<li><a href="img/photos/13_big.jpg" data-lightbox="galerie" title="photo 13"><img src="img/photos/13.jpg"></a></li>
+				<li><a href="img/photos/14_big.jpg" data-lightbox="galerie" title="photo 14"><img src="img/photos/14.jpg" ></a></li>
+				<li><a href="img/photos/15_big.jpg" data-lightbox="galerie" title="photo 15"><img src="img/photos/15.jpg" ></a></li>
+			</ul>
+		</div>
+		<footer>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a class="on" href="photos.html">Photos</a></li>
+				<li><a href="alentours.html">Aux alentours</a></li>
+				<li><a href="acces.html">Les accès</a></li>
+				<li><a href="contact.html">Nous contacter</a></li>
+			</ul>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+	<script src="js/lightbox.js"></script>
+	<script>
+		$(function(){
+			$('#galerie li:even img').css('border','2px solid black');
+			$('#galerie li:odd img').css('border','2px solid red');
+		});
+	</script>
+</body>
+</html>

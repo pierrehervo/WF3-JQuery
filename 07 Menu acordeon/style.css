@@ -1,0 +1,50 @@
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size:1.2em;
+}
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #1fa0e4;
+  color: #FFF;
+  width: 20%;
+  }
+  .navigation li:not(:last-child) {
+    border-bottom:1px dotted #333;
+  }
+  .navigation a, .navigation span {
+    display: block;
+    padding: 8px 15px;
+    color: #FFF;
+    text-decoration: none;
+    background: #1fa0e4;
+  }
+  .navigation .toggleSubMenu {
+      position:relative;
+  }
+  .navigation .toggleSubMenu > a::after {
+    font-family:FontAwesome;
+    content:"\f107";
+    position:absolute;
+    right:10px;
+  }
+  .navigation .toggleSubMenu > a.open::after {
+    font-family:FontAwesome;
+    content:"\f106";
+    position:absolute;
+    right:10px;
+  }
+  .navigation a:hover, .navigation a:active {
+    text-decoration: underline;
+  }
+  .navigation .subMenu {
+    font-size: .9em;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #666;
+  }
+  .navigation ul.subMenu a {
+    background: none;
+    padding: 8px 25px;
+  }

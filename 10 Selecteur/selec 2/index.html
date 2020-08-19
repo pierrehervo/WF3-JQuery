@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>jQuery - Images</title>
+  </head>
+  <body>
+    <main>
+        <h1>Travail sur les attributs des images</h1>
+        <div class="images">
+            <img src="img/milk.jpg" alt="Lait fruitée" title="Lait fruité">
+            <img src="img/antioxidant.jpg" alt="Jus d'herbes" title="Jus d'herbes">
+            <img src="img/blueberry.jpg" alt="Smoothie fruits rouges" title="Smoothie fruits rouges" >
+            <img src="img/fruits.jpg" alt="Jus de fruits" title="Jus de fruits">
+            <img src="img/lemon-juice.jpg" alt="Jus d'agrumes" title="Jus d'agrumes" >
+            <img src="img/beverage.jpg" alt="Smoothie" title="Smoothie">
+        </div>
+    </main>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+    $(function() {
+      // Padding sur toutes les images
+      $('img').css('padding','10px').css('border', '3px dotted black');
+      $('[title~="Jus"]').css('border-color','green');
+      $('[src$="berry.jpg"]').css('border-color','blue');
+      $('[src*="age"]').css('border-color','orange').css('border-style','dashed').css('border-width','10px');
+      $('[alt~="Lait"]').css('border-width','15px');
+    }
+    </script>
+  </body>
+</html>

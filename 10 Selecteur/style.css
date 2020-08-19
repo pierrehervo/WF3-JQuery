@@ -1,0 +1,12 @@
+body {
+  font-family:Arial, sans-serif;
+}
+li {
+  margin: 10px;
+}
+.rouge {
+  color: red;
+}
+.bleu {
+  color:blue;
+}

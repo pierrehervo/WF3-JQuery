@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Joli Gite - Aux alentours</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<header id="entete">
+			<h1 id="logo">Joli Gite</h1>
+		</header>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="photos.html">Photos</a></li>
+				<li><a class="on" href="alentours.html">Aux alentours</a></li>
+				<li><a href="acces.html">Les accès</a></li>
+				<li><a href="contact.html">Nous contacter</a></li>
+			</ul>
+		</nav>
+		<div id="contenu">
+			<h1>Dans les environs</h1>
+			<section id="environ">
+				<h2><i class="fas fa-caret-up"></i>Volerie des aigles</h2>
+				<p>Spectacle de rapaces en liberté dans les ruines du château médiéval</p>
+				<p class="detail">La Volerie offre un spectacle impressionnant et saisissant : le vol en complète liberté des plus grands rapaces du monde dans les ruines du château. Une occasion unique pour observer de près des oiseaux inapprochables dans la nature. C'est dans ce cadre médiéval que les plus beaux rapaces du monde volent à seulement quelques centimètres du public. De quoi émerveiller les enfants et les plus  grands !</p>
+				<p><a href="http://www.voleriedesaigles.net/">http://www.voleriedesaigles.net</a></p>
+				<h2><i class="fas fa-caret-up"></i>Ecole de voile</h2>
+				<p>Premiere ecole de voile d'europe avec plus de 14000 stagiaires chaque annee. Stages de voile tous niveaux en croisiere, catamaran, deriveur et planche.</p>
+				<p class="detail">Elle est aujourd'hui reconnue comme LA référence dans le monde de l'enseignement de la voile, et accueille plus de 14000 stagiaires et moniteurs par an.</p>
+				<p><a href="http://www.ecoledevoile.com/">http://www.ecoledevoile.com</a></p>
+			</section>
+		</div>
+		<footer>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="photos.html">Photos</a></li>
+				<li><a class="on" href="alentours.html">Aux alentours</a></li>
+				<li><a href="acces.html">Les accès</a></li>
+				<li><a href="contact.html">Nous contacter</a></li>
+			</ul>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+	<script>
+	
+		$(function (){
+			$('#environ .detail').hide();
+			$('#environ h2').click(function(){
+				$(this).nextUntil('h2','.detail').slideToggle();
+				$(this).find('i').toggleClass('fa-caret-down');
+				$(this).find('i').toggleClass('fa-caret-up');
+			});
+		});
+	</script>
+</body>
+</html>

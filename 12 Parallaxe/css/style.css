@@ -1,0 +1,104 @@
+/* Styles généraux */
+body {
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Titillium Web', sans-serif;*/
+  font-size:1em;
+  line-height: 1.4em;
+  color:#666;
+  margin:0;
+}
+.align-left {
+	text-align:left;
+}
+.align-center {
+	text-align:center;
+}
+.align-right {
+	text-align:right;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1, h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+}
+h1 {
+  font-size:4em;
+  text-align: center;
+}
+h2 {
+  font-size:2.5em;
+}
+h3 {
+  font-size:1.8em;
+}
+.flex {
+  display: flex;
+}
+.space-around {
+  justify-content: space-around;
+}
+/* STYLES DU HEADER */
+header {
+  padding:1% 0;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+}
+nav a {
+  color:#E11F10;
+  font-size:1.4em;
+}
+nav a:hover {
+}
+/* STYLES DU MAIN */
+/* Ce qui concerne le corps du site */
+.container {
+  min-width:80%;
+  max-width:1200px;
+  margin-left:auto;
+  margin-right:auto;
+}
+main {
+
+}
+main img {
+  max-width: 100%;
+}
+#themes {
+  background: url('../img/strasbourg.jpg') 50% 0 no-repeat fixed;
+  padding:5% 2%;
+}
+#themes article {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding:1%;
+  flex-basis:20%;
+}
+#colmar {
+  background: url('../img/colmar.jpg') 50% 0 no-repeat fixed;
+  padding:5% 2%;
+}
+#vignoble {
+  background: url('../img/vignoble.jpg') 50% 0 no-repeat fixed;
+  padding:5% 2%;
+}
+#colmar article, #vignoble article {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding:1%;
+}
+/* FOOTER */
+/* Ce qui concerne le footer */
+footer {
+  text-align: center;
+  background-color:#E11F10;
+  color:white;
+  padding:15px 20px;
+}
+footer a {
+}

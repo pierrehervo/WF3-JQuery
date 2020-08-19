@@ -1,0 +1,42 @@
+body {
+  font-family:Verdana, sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  border: 2px dashed red;
+  width:48%;
+  text-align: center;
+}
+
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  border: 2px dashed red;
+  width:48%;
+  text-align: center;
+}
+
+.box p {
+  list-style: none;
+  background-color: #CCC;
+  padding:10px;
+  margin:10px 10%;
+  cursor: pointer;
+}
+.box p.move{  
+  background-color: rgb(43, 168, 177);
+}

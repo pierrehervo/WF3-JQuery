@@ -1,0 +1,120 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color:#333333;
+	background-color:#FEFEFE;
+	font-size:1em;
+	line-height:1.8em;
+	margin:0;
+}
+.align-left {
+	text-align:left;
+}
+.align-center {
+	text-align:center;
+}
+.align-right {
+	text-align:right;
+}
+.clear {
+	clear:both;
+}
+h1 {
+	color:#32CBDB;
+	text-align:center;
+	font-size:2em;
+	line-height:1.5em;
+}
+h3 span {
+	color:#CC0000;
+}
+a {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+header , footer{
+	text-align:center;
+}
+nav {
+	margin-bottom:30px;
+}
+nav ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+nav li {
+	margin-bottom:10px;
+}
+nav a {
+	color:#32CBDB;
+	padding-left:15px;
+	padding-right:15px;
+}
+main {
+	text-align:justify;
+}
+main img {
+	width:100%;
+}
+section {
+	padding:2% 5%;
+}
+#destination {
+	background-color:#80D8FF;
+}
+#destination h3 {
+	text-align:center;
+}
+footer {
+	padding:1% 2%;
+}
+.flex-caption {
+	width: 100%;
+	padding: 20px;
+	margin:0;
+	box-sizing: border-box;
+	left: 0;
+	bottom: 0;
+	background: rgba(50,203,219,0.6);
+	color: #FFF;
+	font-size: 1.5em;
+	font-weight:bold;
+	text-align: center;
+}
+.flex-control-paging li a {
+    background: #02b9d8;
+    background: rgba(2, 185, 216, 0.5);
+}
+.flex-control-paging li a.flex-active {
+    background: #0094b9;
+    background: rgba(0, 148, 185, 0.9);
+}
+@media screen and (min-width: 768px) {
+	article.float-left {
+		float:left;
+		width:30%;
+		margin-right:5%;
+	}
+	article.float-right {
+		float:right;
+		width:30%;
+	}
+	#croisiere article {
+		display:inline-block;
+		vertical-align:top;
+		width:46%;
+		padding:0 2%;
+	}
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+	#destination h3 span {
+		display:block;
+	}
+}
+@media screen and (min-width: 1024px) {
+	nav li {
+		display:inline;
+	}
+}
